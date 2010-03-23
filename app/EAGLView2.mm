@@ -9,7 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/EAGLDrawable.h>
 
-#import "EAGLView.h"
+#import "EAGLView2.h"
 
 #define USE_DEPTH_BUFFER 1
 
@@ -31,7 +31,7 @@ extern "C" {
 
 
 // A class extension to declare private methods
-@interface EAGLView ()
+@interface EAGLView2 ()
 
 @property (nonatomic, retain) EAGLContext *context;
 @property (nonatomic, assign) NSTimer *animationTimer;
@@ -43,7 +43,7 @@ extern "C" {
 @end
 
 
-@implementation EAGLView
+@implementation EAGLView2
 
 @synthesize context;
 @synthesize animationTimer;

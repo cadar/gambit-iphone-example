@@ -202,24 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1F4F2DEB11590C2600205FB4</string>
+				<string>1F4F2FA61159119800205FB4</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>GameAppDelegate.mm</string>
+				<string>EAGLView2.mm</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1F4F2DEC11590C2600205FB4</string>
+						<string>1F4F2FA71159119800205FB4</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>GameAppDelegate.mm</string>
+						<string>EAGLView2.mm</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1F4F2F5011590E7100205FB4</string>
+						<string>1F4F2FA81159119800205FB4</string>
 						<key>history</key>
 						<array>
-							<string>1F4F2DE311590C0000205FB4</string>
+							<string>1F4F2FA21159118E00205FB4</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -231,11 +231,11 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {972, 557}}</string>
+				<string>{{0, 20}, {991, 1002}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>363 415 972 598 0 0 1920 1178 </string>
+				<string>310 135 991 1043 0 0 1920 1178 </string>
 			</dict>
 		</dict>
 	</array>
@@ -319,8 +319,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>22</integer>
+									<integer>9</integer>
+									<integer>8</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -371,7 +372,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1F4F2F4F11590E7100205FB4</string>
+										<string>1F4F2FA51159119800205FB4</string>
 										<key>history</key>
 										<array>
 											<string>1F0F42B71158D010005E11AC</string>
@@ -580,9 +581,9 @@
 		<string>1F4F2DCA11590A5300205FB4</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1F4F2DEB11590C2600205FB4</string>
-		<string>1F0F428F1158CC94005E11AC</string>
 		<string>/Users/cadar/iphone/game/Game.xcodeproj</string>
+		<string>1F0F428F1158CC94005E11AC</string>
+		<string>1F4F2FA61159119800205FB4</string>
 	</array>
 	<key>WindowString</key>
 	<string>40 248 1434 930 0 0 1920 1178 </string>
@@ -613,14 +614,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1236, 346}}</string>
+								<string>{{0, 0}, {1041, 288}}</string>
 								<key>RubberWindowFrame</key>
-								<string>482 346 1236 832 0 0 1920 1178 </string>
+								<string>482 404 1041 774 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>346pt</string>
+							<string>288pt</string>
 						</dict>
 						<dict>
 							<key>BecomeActive</key>
@@ -639,9 +640,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 351}, {1236, 440}}</string>
+								<string>{{0, 293}, {1041, 440}}</string>
 								<key>RubberWindowFrame</key>
-								<string>482 346 1236 832 0 0 1920 1178 </string>
+								<string>482 404 1041 774 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -650,7 +651,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>791pt</string>
+					<string>733pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -673,7 +674,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>482 346 1236 832 0 0 1920 1178 </string>
+			<string>482 404 1041 774 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1F0F428F1158CC94005E11AC</string>
 			<key>WindowToolIsVisible</key>

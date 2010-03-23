@@ -7,7 +7,8 @@
 //
 
 #import "GameAppDelegate.h"
-#import "EAGLView.h"
+#import "EAGLView2.h"
+#import "cocos2d.h"
 #import "Box2D.h"
 
 @implementation GameAppDelegate
