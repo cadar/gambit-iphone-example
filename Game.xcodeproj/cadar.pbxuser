@@ -24,8 +24,8 @@
 	};
 	1AC6512A0FE70FD1004C15CB /* GameAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1165, 640}}";
-			sepNavSelRange = "{200, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1165, 654}}";
+			sepNavSelRange = "{460, 0}";
 			sepNavVisRange = "{0, 695}";
 			sepNavWindowFrame = "{{38, 498}, {972, 654}}";
 		};
@@ -105,35 +105,96 @@
 			sepNavWindowFrame = "{{614, 78}, {972, 654}}";
 		};
 	};
-	1F0F43F51158EF8F005E11AC /* PBXTextBookmark */ = {
+	1FA942041158F9EE007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FA942151158FA03007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FA942161158FA34007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FA9421B1158FAE6007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FA942221158FB28007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FA942251158FB43007858D3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1FFA46651158F965001EB5B6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1AC6512A0FE70FD1004C15CB /* GameAppDelegate.m */;
-		name = "GameAppDelegate.m: 12";
+		name = "GameAppDelegate.m: 24";
 		rLen = 0;
-		rLoc = 200;
+		rLoc = 460;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 0;
 	};
-	1F9402CB1158F22D00F164EC /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AC6512A0FE70FD1004C15CB /* GameAppDelegate.m */;
-		name = "GameAppDelegate.m: 12";
-		rLen = 0;
-		rLoc = 200;
-		rType = 0;
-		vrLen = 695;
-		vrLoc = 0;
+	1FFA46661158F965001EB5B6 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
 	};
-	1FA1190B1158F13E00E91A0B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1AC6512A0FE70FD1004C15CB /* GameAppDelegate.m */;
-		name = "GameAppDelegate.m: 12";
+	1FFA46691158F9BF001EB5B6 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/cadar/iphone/game/resources/GameInfo.plist;
 		rLen = 0;
-		rLoc = 200;
-		rType = 0;
-		vrLen = 695;
-		vrLoc = 0;
+		rLoc = 9223372036854775808;
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = DebugiPhone;
@@ -148,12 +209,26 @@
 			1F0F42781158CC8C005E11AC /* Game */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					874,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					987,
+					986,
 					20,
 					48,
 					43,
@@ -175,7 +250,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					947,
+					946,
 					60,
 					20,
 					48,
@@ -192,15 +267,21 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 291041821;
-			PBXWorkspaceStateSaveDate = 291041821;
+			PBXPerProjectTemplateStateSaveDate = 291043818;
+			PBXWorkspaceStateSaveDate = 291043818;
 		};
 		perUserProjectItems = {
 			1F0F42B71158D010005E11AC = 1F0F42B71158D010005E11AC /* PBXTextBookmark */;
 			1F0F42B81158D010005E11AC = 1F0F42B81158D010005E11AC /* PBXTextBookmark */;
-			1F0F43F51158EF8F005E11AC = 1F0F43F51158EF8F005E11AC /* PBXTextBookmark */;
-			1F9402CB1158F22D00F164EC /* PBXTextBookmark */ = 1F9402CB1158F22D00F164EC /* PBXTextBookmark */;
-			1FA1190B1158F13E00E91A0B = 1FA1190B1158F13E00E91A0B /* PBXTextBookmark */;
+			1FA942041158F9EE007858D3 /* PlistBookmark */ = 1FA942041158F9EE007858D3 /* PlistBookmark */;
+			1FA942151158FA03007858D3 /* PlistBookmark */ = 1FA942151158FA03007858D3 /* PlistBookmark */;
+			1FA942161158FA34007858D3 /* PlistBookmark */ = 1FA942161158FA34007858D3 /* PlistBookmark */;
+			1FA9421B1158FAE6007858D3 /* PlistBookmark */ = 1FA9421B1158FAE6007858D3 /* PlistBookmark */;
+			1FA942221158FB28007858D3 /* PlistBookmark */ = 1FA942221158FB28007858D3 /* PlistBookmark */;
+			1FA942251158FB43007858D3 /* PlistBookmark */ = 1FA942251158FB43007858D3 /* PlistBookmark */;
+			1FFA46651158F965001EB5B6 = 1FFA46651158F965001EB5B6 /* PBXTextBookmark */;
+			1FFA46661158F965001EB5B6 = 1FFA46661158F965001EB5B6 /* PBXBookmark */;
+			1FFA46691158F9BF001EB5B6 = 1FFA46691158F9BF001EB5B6 /* PlistBookmark */;
 		};
 		sourceControlManager = 1F0F42911158CC94005E11AC /* Source Control */;
 		userBuildSettings = {
