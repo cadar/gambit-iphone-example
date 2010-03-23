@@ -12,6 +12,7 @@
 #include "gambit.h"
 #include "stdlib.h"
 
+
 #define LINKER ____20_init__
 
 ___BEGIN_C_LINKAGE
