@@ -7,9 +7,7 @@
 (include "util/remote-debugger/debuggee.scm")
 (make-rdi-host "localhost:20000")
 
-(thread-start!
- (make-thread
-  (lambda () (##repl-debug-main))))
+;(thread-start! (make-thread  (lambda () (##repl-debug-main))))
 
 ;;;; dependencies
 
@@ -24,8 +22,8 @@
 (include "vectors.scm")
 (include "events.scm")
 
-(load (local-resource "lib/apps/app5"))
-;;(include "apps/app5.scm")
+;(load (local-resource "lib/apps/app5"))
+(include "apps/app5.scm")
 
 ;; ;;;; c interface
 

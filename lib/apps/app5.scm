@@ -70,7 +70,7 @@
 (define (init)
   (random-source-randomize! default-random-source)
 
-  (set! sphere-mesh (obj-load (local-resource "resources/sphere") #t))
+  (set! sphere-mesh (obj-load (resource "sphere") #t))
   
   ;; opengl
   (let* ((fov 40.)
