@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
     
 	___setup(&setup_params);
 
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+    int retVal = UIApplicationMain(argc, argv, nil, @"GameAppDelegate");
     
     ___cleanup();
 	[pool release];
