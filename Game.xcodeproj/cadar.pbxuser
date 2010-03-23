@@ -17,17 +17,18 @@
 	};
 	1AC651270FE70FD1004C15CB /* EAGLView2.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1377, 2964}}";
-			sepNavSelRange = "{704, 0}";
-			sepNavVisRange = "{0, 1841}";
-			sepNavWindowFrame = "{{310, 79}, {991, 1099}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1377, 2925}}";
+			sepNavSelRange = "{683, 0}";
+			sepNavVisRange = "{220, 1886}";
+			sepNavWindowFrame = "{{648, 79}, {991, 1099}}";
 		};
 	};
 	1AC651280FE70FD1004C15CB /* main.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1092, 871}}";
-			sepNavSelRange = "{216, 0}";
-			sepNavVisRange = "{35, 1322}";
+			sepNavSelRange = "{377, 0}";
+			sepNavVisRange = "{0, 1553}";
+			sepNavWindowFrame = "{{38, 53}, {991, 1099}}";
 		};
 	};
 	1AC651290FE70FD1004C15CB /* GameAppDelegate.h */ = {

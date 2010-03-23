@@ -281,6 +281,8 @@
 		1F4F2F1111590D2D00205FB4 /* SimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F211159025C007858D3 /* SimpleAudioEngine.h */; };
 		1F4F2F1211590D2D00205FB4 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F221159025C007858D3 /* SimpleAudioEngine.m */; };
 		1F4F2F3811590E0D00205FB4 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4F2E1211590D1300205FB4 /* libcocos2d.a */; };
+		1F4F2FC41159139200205FB4 /* HelloWorldScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */; };
+		1F4F2FC51159139200205FB4 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F2FC21159139200205FB4 /* GLES-Render.mm */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -320,6 +322,10 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F0F43B81158EC47005E11AC /* GameInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameInfo.plist; sourceTree = "<group>"; };
 		1F4F2E1211590D1300205FB4 /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloWorldScene.mm; path = app/HelloWorldScene.mm; sourceTree = "<group>"; };
+		1F4F2FC11159139200205FB4 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = app/HelloWorldScene.h; sourceTree = "<group>"; };
+		1F4F2FC21159139200205FB4 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "app/GLES-Render.mm"; sourceTree = "<group>"; };
+		1F4F2FC31159139200205FB4 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "app/GLES-Render.h"; sourceTree = "<group>"; };
 		1F584D741159073100C6CFA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1F584D761159073100C6CFA2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1F584D7A1159073100C6CFA2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -634,6 +640,10 @@
 		1F4F2DA211590A1700205FB4 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */,
+				1F4F2FC11159139200205FB4 /* HelloWorldScene.h */,
+				1F4F2FC21159139200205FB4 /* GLES-Render.mm */,
+				1F4F2FC31159139200205FB4 /* GLES-Render.h */,
 				1AC651300FE70FE9004C15CB /* window.xib */,
 				1AC651260FE70FD1004C15CB /* EAGLView2.h */,
 				1AC651270FE70FD1004C15CB /* EAGLView2.mm */,
@@ -1290,6 +1300,8 @@
 				1AC6512C0FE70FD1004C15CB /* EAGLView2.mm in Sources */,
 				1AC6512D0FE70FD1004C15CB /* main.m in Sources */,
 				1AC6512E0FE70FD1004C15CB /* GameAppDelegate.mm in Sources */,
+				1F4F2FC41159139200205FB4 /* HelloWorldScene.mm in Sources */,
+				1F4F2FC51159139200205FB4 /* GLES-Render.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
