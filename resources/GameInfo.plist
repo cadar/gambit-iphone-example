@@ -31,7 +31,5 @@
 	<false/>
 	<key>UIStatusBarHidden</key>
 	<true/>
-	<key>NSMainNibFile</key>
-	<string>window</string>
 </dict>
 </plist>

@@ -19,7 +19,7 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	// Init the window
-	if(false){
+	if(true){
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
 	// cocos2d will inherit these values
@@ -71,7 +71,7 @@
 }
 
 - (void)dealloc {
-//	[[CCDirector sharedDirector] release];
+	[[CCDirector sharedDirector] release];
 	[window release];
 	[glView release];
 	[super dealloc];
