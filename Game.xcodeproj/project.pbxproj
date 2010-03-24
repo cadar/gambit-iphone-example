@@ -296,7 +296,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F4F2E1111590D1300205FB4 /* cocos2d */;
+			remoteGlobalIDString = 1F4F2E1111590D1300205FB4;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
