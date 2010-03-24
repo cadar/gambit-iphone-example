@@ -7,7 +7,7 @@
 //
 
 #import "GameAppDelegate.h"
-#import "EAGLView.h"
+#import "EAGLView2.h"
 #import "cocos2d.h"
 #import "HelloWorldScene.h"
 
@@ -19,6 +19,7 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	// Init the window
+	if(false){
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
 	// cocos2d will inherit these values
@@ -53,23 +54,24 @@
 	[window makeKeyAndVisible];		
 	
 	[[CCDirector sharedDirector] runWithScene: [HelloWorld scene]];	
-	
-//	glView.animationInterval = 1.0 / 60.0;
-//	[glView startAnimation];
+	}else{
+	glView.animationInterval = 1.0 / 60.0;
+	[glView startAnimation];
+	}
 }
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-//	glView.animationInterval = 1.0 / 5.0;
+	glView.animationInterval = 1.0 / 5.0;
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-//	glView.animationInterval = 1.0 / 60.0;
+	glView.animationInterval = 1.0 / 60.0;
 }
 
 - (void)dealloc {
-	[[CCDirector sharedDirector] release];
+//	[[CCDirector sharedDirector] release];
 	[window release];
 	[glView release];
 	[super dealloc];

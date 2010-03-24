@@ -292,11 +292,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1F4F2F1511590D3800205FB4 /* PBXContainerItemProxy */ = {
+		4954DDAE115A2A3F00D3DBF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F4F2E1111590D1300205FB4;
+			remoteGlobalIDString = 1F4F2E1111590D1300205FB4 /* cocos2d */;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
@@ -1240,7 +1240,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1F4F2F1611590D3800205FB4 /* PBXTargetDependency */,
+				4954DDAF115A2A3F00D3DBF2 /* PBXTargetDependency */,
 			);
 			name = Game;
 			productName = game;
@@ -1451,10 +1451,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F4F2F1611590D3800205FB4 /* PBXTargetDependency */ = {
+		4954DDAF115A2A3F00D3DBF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1F4F2E1111590D1300205FB4 /* cocos2d */;
-			targetProxy = 1F4F2F1511590D3800205FB4 /* PBXContainerItemProxy */;
+			targetProxy = 4954DDAE115A2A3F00D3DBF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

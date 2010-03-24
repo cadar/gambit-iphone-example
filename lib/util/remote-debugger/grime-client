@@ -1,4 +1,4 @@
 #! /bin/sh
-
-where="/Users/james/projects/scheme/gambit-iphone-example/lib/util/remote-debugger"
+export PATH=$PATH:/Users/Mats/iphone/Gambit-C/bin
+where="/Users/Mats/iphone/game/lib/util/remote-debugger"
 exec gsi "$where/pump.scm" "$1"
