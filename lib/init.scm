@@ -8,7 +8,11 @@
 ;(make-rdi-host "localhost:20000")
 (make-rdi-host "10.0.1.9:20000")
 
-(thread-start! (make-thread  (lambda () (##repl-debug-main))))
+(thread-start! (make-thread  (lambda () 
+                               (println "starting repl..")
+                               (##repl-debug-main)
+                               (println "..repl done.")
+                               )))
 
 ;;;; dependencies
 
@@ -36,3 +40,5 @@
 
 (c-define (c-get-title) () char-string "get_title" ""
   (get-title))
+
+(println "init.scm done")

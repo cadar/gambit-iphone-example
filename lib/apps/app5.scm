@@ -109,11 +109,11 @@
   (scene-list-update update-physics))
 
 (define (render)
-  (glClearColor 0. 0. 0. 1.)
-  (glClear (bitwise-ior GL_COLOR_BUFFER_BIT GL_DEPTH_BUFFER_BIT))
-  (run)
-  (run-render-queue (scene-list->render-queue))
+  ;; (glClearColor 0. 0. 0. 1.)
+  ;; (glClear (bitwise-ior GL_COLOR_BUFFER_BIT GL_DEPTH_BUFFER_BIT))
+  ;; (run)
+  ;; (run-render-queue (scene-list->render-queue))
   (##gc))
 
 (define (get-title)
-  "")
+  "Testing..")

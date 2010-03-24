@@ -296,7 +296,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1F4F2E1111590D1300205FB4 /* cocos2d */;
+			remoteGlobalIDString = 1F4F2E1111590D1300205FB4;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
@@ -632,11 +632,11 @@
 		1A8BCDAE101A1BEA00DED70B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F0F43B81158EC47005E11AC /* GameInfo.plist */,
 				1F4F30271159168500205FB4 /* blocks.png */,
 				1F4F30281159168500205FB4 /* Default.png */,
 				1F4F30291159168500205FB4 /* fps_images.png */,
 				1F4F302A1159168500205FB4 /* Icon.png */,
-				1F0F43B81158EC47005E11AC /* GameInfo.plist */,
 				1A2DA18F1047358B00D90110 /* jlongster.obj.gso */,
 				1A53011C103E5A9700859416 /* sphere.obj.gso */,
 				1A5BC5D9102D21E8001FEDD9 /* collision.obj */,

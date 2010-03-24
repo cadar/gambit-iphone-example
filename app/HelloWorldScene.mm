@@ -9,6 +9,26 @@
 // Import the interfaces
 #import "HelloWorldScene.h"
 
+
+#if __cplusplus
+extern "C" {
+#endif
+    void register_view(UIView*);
+    void init();
+    void render();
+    char* get_title();
+    void did_accelerate(UIAccelerometer*, UIAcceleration*);
+    void touches_began(NSSet*, UIEvent*);
+    void touches_moved(NSSet*, UIEvent*);
+    void touches_ended(NSSet*, UIEvent*);
+    void touches_cancelled(NSSet*, UIEvent*);
+#if __cplusplus
+}
+#endif
+
+
+
+
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
 //This ratio defines how many pixels correspond to 1 Box2D "metre"
 //Box2D is optimized for objects of 1x1 metre therefore it makes sense
@@ -142,7 +162,7 @@ enum {
 	glEnable(GL_TEXTURE_2D);
 	glEnableClientState(GL_COLOR_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-
+	render();
 }
 
 -(void) addNewSpriteWithCoords:(CGPoint)p
