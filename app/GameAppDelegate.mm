@@ -9,7 +9,8 @@
 #import "GameAppDelegate.h"
 #import "EAGLView2.h"
 #import "cocos2d.h"
-#import "HelloWorldScene.h"
+#import "MenuScene.h"
+#import "PlayScene.h"
 
 
 @implementation GameAppDelegate
@@ -51,9 +52,9 @@
 		
 		// create an openGL view inside a window
 		[[CCDirector sharedDirector] attachInView:window];	
-		[window makeKeyAndVisible];		
 		
-		[[CCDirector sharedDirector] runWithScene: [HelloWorld scene]];	
+		[[CCDirector sharedDirector] runWithScene: [Menu scene]];	
+		[window makeKeyAndVisible];		
 	}else{
 		glView.animationInterval = 1.0 / 60.0;
 		[glView startAnimation];

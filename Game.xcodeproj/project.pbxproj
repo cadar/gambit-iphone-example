@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A1D5ACA109A349500ED980E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D5AC9109A349500ED980E /* OpenAL.framework */; };
-		1A1D5ACE109A34A600ED980E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D5ACD109A34A600ED980E /* AudioToolbox.framework */; };
 		1A2DA1901047358B00D90110 /* jlongster.obj.gso in Resources */ = {isa = PBXBuildFile; fileRef = 1A2DA18F1047358B00D90110 /* jlongster.obj.gso */; };
 		1A4EBE0D0FDA21CD000F4C9F /* init_.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A4EBE0C0FDA21CD000F4C9F /* init_.c */; };
 		1A53011D103E5A9700859416 /* sphere.obj.gso in Resources */ = {isa = PBXBuildFile; fileRef = 1A53011C103E5A9700859416 /* sphere.obj.gso */; };
@@ -26,7 +24,6 @@
 		1AC6904F101E8ECE002D468D /* medium.obj in Resources */ = {isa = PBXBuildFile; fileRef = 1AC6904E101E8ECE002D468D /* medium.obj */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		1F0F43B91158EC47005E11AC /* GameInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F0F43B81158EC47005E11AC /* GameInfo.plist */; };
 		1F4F2E1611590D2C00205FB4 /* Box2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F241159025C007858D3 /* Box2D.h */; };
 		1F4F2E1711590D2C00205FB4 /* b2CircleShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F271159025C007858D3 /* b2CircleShape.cpp */; };
 		1F4F2E1811590D2C00205FB4 /* b2CircleShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F281159025C007858D3 /* b2CircleShape.h */; };
@@ -255,33 +252,14 @@
 		1F4F2EF711590D2D00205FB4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F041159025C007858D3 /* CJSONScanner.m */; };
 		1F4F2EF811590D2D00205FB4 /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F051159025C007858D3 /* CJSONSerializer.h */; };
 		1F4F2EF911590D2D00205FB4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F061159025C007858D3 /* CJSONSerializer.m */; };
-		1F4F2EFA11590D2D00205FB4 /* FontLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F081159025C007858D3 /* FontLabel.h */; };
-		1F4F2EFB11590D2D00205FB4 /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F091159025C007858D3 /* FontLabel.m */; };
-		1F4F2EFC11590D2D00205FB4 /* FontLabelStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0A1159025C007858D3 /* FontLabelStringDrawing.h */; };
-		1F4F2EFD11590D2D00205FB4 /* FontLabelStringDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0B1159025C007858D3 /* FontLabelStringDrawing.m */; };
-		1F4F2EFE11590D2D00205FB4 /* FontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0C1159025C007858D3 /* FontManager.h */; };
-		1F4F2EFF11590D2D00205FB4 /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0D1159025C007858D3 /* FontManager.m */; };
-		1F4F2F0011590D2D00205FB4 /* ZAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0E1159025C007858D3 /* ZAttributedString.h */; };
-		1F4F2F0111590D2D00205FB4 /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0F1159025C007858D3 /* ZAttributedString.m */; };
-		1F4F2F0211590D2D00205FB4 /* ZAttributedStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F101159025C007858D3 /* ZAttributedStringPrivate.h */; };
-		1F4F2F0311590D2D00205FB4 /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F111159025C007858D3 /* ZFont.h */; };
-		1F4F2F0411590D2D00205FB4 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F121159025C007858D3 /* ZFont.m */; };
 		1F4F2F0511590D2D00205FB4 /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F141159025C007858D3 /* CLScoreServerPost.h */; };
 		1F4F2F0611590D2D00205FB4 /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F151159025C007858D3 /* CLScoreServerPost.m */; };
 		1F4F2F0711590D2D00205FB4 /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F161159025C007858D3 /* CLScoreServerRequest.h */; };
 		1F4F2F0811590D2D00205FB4 /* CLScoreServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F171159025C007858D3 /* CLScoreServerRequest.m */; };
 		1F4F2F0911590D2D00205FB4 /* cocoslive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F181159025C007858D3 /* cocoslive.h */; };
 		1F4F2F0A11590D2D00205FB4 /* cocoslive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F191159025C007858D3 /* cocoslive.m */; };
-		1F4F2F0B11590D2D00205FB4 /* CDAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1B1159025C007858D3 /* CDAudioManager.h */; };
-		1F4F2F0C11590D2D00205FB4 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F1C1159025C007858D3 /* CDAudioManager.m */; };
-		1F4F2F0D11590D2D00205FB4 /* CDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1D1159025C007858D3 /* CDConfig.h */; };
-		1F4F2F0E11590D2D00205FB4 /* CDOpenALSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1E1159025C007858D3 /* CDOpenALSupport.h */; };
-		1F4F2F0F11590D2D00205FB4 /* CocosDenshion.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1F1159025C007858D3 /* CocosDenshion.h */; };
-		1F4F2F1011590D2D00205FB4 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F201159025C007858D3 /* CocosDenshion.m */; };
-		1F4F2F1111590D2D00205FB4 /* SimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F211159025C007858D3 /* SimpleAudioEngine.h */; };
-		1F4F2F1211590D2D00205FB4 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F221159025C007858D3 /* SimpleAudioEngine.m */; };
 		1F4F2F3811590E0D00205FB4 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4F2E1211590D1300205FB4 /* libcocos2d.a */; };
-		1F4F2FC41159139200205FB4 /* HelloWorldScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */; };
+		1F4F2FC41159139200205FB4 /* MenuScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F2FC01159139200205FB4 /* MenuScene.mm */; };
 		1F4F2FC51159139200205FB4 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F2FC21159139200205FB4 /* GLES-Render.mm */; };
 		1F4F302B1159168500205FB4 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F30271159168500205FB4 /* blocks.png */; };
 		1F4F302C1159168500205FB4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F30281159168500205FB4 /* Default.png */; };
@@ -289,6 +267,36 @@
 		1F4F302E1159168500205FB4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F302A1159168500205FB4 /* Icon.png */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		494ED8F7115F679C0078EAFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F584D741159073100C6CFA2 /* AVFoundation.framework */; };
+		494ED8FC115F67AD0078EAFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F584D741159073100C6CFA2 /* AVFoundation.framework */; };
+		494ED9F3115F6F7F0078EAFC /* CDAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1B1159025C007858D3 /* CDAudioManager.h */; };
+		494ED9F4115F6F7F0078EAFC /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F1C1159025C007858D3 /* CDAudioManager.m */; };
+		494ED9F5115F6F7F0078EAFC /* CDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1D1159025C007858D3 /* CDConfig.h */; };
+		494ED9F6115F6F7F0078EAFC /* CDOpenALSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1E1159025C007858D3 /* CDOpenALSupport.h */; };
+		494ED9F7115F6F7F0078EAFC /* CocosDenshion.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1F1159025C007858D3 /* CocosDenshion.h */; };
+		494ED9F8115F6F7F0078EAFC /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F201159025C007858D3 /* CocosDenshion.m */; };
+		494ED9F9115F6F7F0078EAFC /* SimpleAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F211159025C007858D3 /* SimpleAudioEngine.h */; };
+		494ED9FA115F6F7F0078EAFC /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F221159025C007858D3 /* SimpleAudioEngine.m */; };
+		494EDA07115F6FF90078EAFC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494EDA06115F6FF90078EAFC /* CoreAudio.framework */; };
+		494EDA13115F70160078EAFC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494EDA06115F6FF90078EAFC /* CoreAudio.framework */; };
+		498E9B8D115F80E10070BBC8 /* FontLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F081159025C007858D3 /* FontLabel.h */; };
+		498E9B8E115F80E10070BBC8 /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F091159025C007858D3 /* FontLabel.m */; };
+		498E9B8F115F80E10070BBC8 /* FontLabelStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0A1159025C007858D3 /* FontLabelStringDrawing.h */; };
+		498E9B90115F80E10070BBC8 /* FontLabelStringDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0B1159025C007858D3 /* FontLabelStringDrawing.m */; };
+		498E9B91115F80E10070BBC8 /* FontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0C1159025C007858D3 /* FontManager.h */; };
+		498E9B92115F80E10070BBC8 /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0D1159025C007858D3 /* FontManager.m */; };
+		498E9B93115F80E10070BBC8 /* ZAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F0E1159025C007858D3 /* ZAttributedString.h */; };
+		498E9B94115F80E10070BBC8 /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F0F1159025C007858D3 /* ZAttributedString.m */; };
+		498E9B95115F80E10070BBC8 /* ZAttributedStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F101159025C007858D3 /* ZAttributedStringPrivate.h */; };
+		498E9B96115F80E10070BBC8 /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F111159025C007858D3 /* ZFont.h */; };
+		498E9B97115F80E10070BBC8 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA94F121159025C007858D3 /* ZFont.m */; };
+		498E9BDC115F82680070BBC8 /* cc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 494ED90F115F68630078EAFC /* cc.mp3 */; };
+		498E9BDD115F82680070BBC8 /* Success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 494ED8A7115F66090078EAFC /* Success.wav */; };
+		498E9C21115F84910070BBC8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E9C20115F84910070BBC8 /* OpenAL.framework */; };
+		498E9C29115F84AF0070BBC8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E9C28115F84AF0070BBC8 /* AudioToolbox.framework */; };
+		498E9C2B115F84AF0070BBC8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498E9C2A115F84AF0070BBC8 /* CoreAudio.framework */; };
+		498E9C50115FB4EF0070BBC8 /* GameOverScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 498E9C4E115FB4EF0070BBC8 /* GameOverScene.mm */; };
+		49A5A7ED115E5F72008E7819 /* PlayScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49A5A7EC115E5F72008E7819 /* PlayScene.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -326,8 +334,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1F0F43B81158EC47005E11AC /* GameInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameInfo.plist; sourceTree = "<group>"; };
 		1F4F2E1211590D1300205FB4 /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloWorldScene.mm; path = app/HelloWorldScene.mm; sourceTree = "<group>"; };
-		1F4F2FC11159139200205FB4 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = app/HelloWorldScene.h; sourceTree = "<group>"; };
+		1F4F2FC01159139200205FB4 /* MenuScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MenuScene.mm; path = app/MenuScene.mm; sourceTree = "<group>"; };
+		1F4F2FC11159139200205FB4 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuScene.h; path = app/MenuScene.h; sourceTree = "<group>"; };
 		1F4F2FC21159139200205FB4 /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "GLES-Render.mm"; path = "app/GLES-Render.mm"; sourceTree = "<group>"; };
 		1F4F2FC31159139200205FB4 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "app/GLES-Render.h"; sourceTree = "<group>"; };
 		1F4F30271159168500205FB4 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocks.png; sourceTree = "<group>"; };
@@ -336,7 +344,6 @@
 		1F4F302A1159168500205FB4 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		1F584D741159073100C6CFA2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1F584D761159073100C6CFA2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1F584D7A1159073100C6CFA2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		1FA94E671159025C007858D3 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		1FA94E681159025C007858D3 /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		1FA94E691159025C007858D3 /* CCActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionManager.h; sourceTree = "<group>"; };
@@ -592,6 +599,18 @@
 		1FA94F711159025C007858D3 /* b2WorldCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2WorldCallbacks.h; sourceTree = "<group>"; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		494ED8A7115F66090078EAFC /* Success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Success.wav; sourceTree = "<group>"; };
+		494ED90F115F68630078EAFC /* cc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cc.mp3; sourceTree = "<group>"; };
+		494ED9A3115F6CB10078EAFC /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		494EDA06115F6FF90078EAFC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		494EDA11115F70160078EAFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		498E9C20115F84910070BBC8 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		498E9C28115F84AF0070BBC8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		498E9C2A115F84AF0070BBC8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		498E9C4E115FB4EF0070BBC8 /* GameOverScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GameOverScene.mm; path = app/GameOverScene.mm; sourceTree = "<group>"; };
+		498E9C4F115FB4EF0070BBC8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = app/GameOverScene.h; sourceTree = "<group>"; };
+		49A5A7EB115E5F72008E7819 /* PlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayScene.h; path = app/PlayScene.h; sourceTree = "<group>"; };
+		49A5A7EC115E5F72008E7819 /* PlayScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PlayScene.mm; path = app/PlayScene.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,9 +623,12 @@
 				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
 				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
 				1A861A8510916C0500706CC5 /* CoreGraphics.framework in Frameworks */,
-				1A1D5ACA109A349500ED980E /* OpenAL.framework in Frameworks */,
-				1A1D5ACE109A34A600ED980E /* AudioToolbox.framework in Frameworks */,
 				1F4F2F3811590E0D00205FB4 /* libcocos2d.a in Frameworks */,
+				494ED8FC115F67AD0078EAFC /* AVFoundation.framework in Frameworks */,
+				494EDA13115F70160078EAFC /* CoreAudio.framework in Frameworks */,
+				498E9C21115F84910070BBC8 /* OpenAL.framework in Frameworks */,
+				498E9C29115F84AF0070BBC8 /* AudioToolbox.framework in Frameworks */,
+				498E9C2B115F84AF0070BBC8 /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +636,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494ED8F7115F679C0078EAFC /* AVFoundation.framework in Frameworks */,
+				494EDA07115F6FF90078EAFC /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +656,8 @@
 		1A8BCDAE101A1BEA00DED70B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				494ED90F115F68630078EAFC /* cc.mp3 */,
+				494ED8A7115F66090078EAFC /* Success.wav */,
 				1F0F43B81158EC47005E11AC /* GameInfo.plist */,
 				1F4F30271159168500205FB4 /* blocks.png */,
 				1F4F30281159168500205FB4 /* Default.png */,
@@ -654,15 +680,19 @@
 			children = (
 				1F4F2FC31159139200205FB4 /* GLES-Render.h */,
 				1F4F2FC21159139200205FB4 /* GLES-Render.mm */,
-				1F4F2FC11159139200205FB4 /* HelloWorldScene.h */,
-				1F4F2FC01159139200205FB4 /* HelloWorldScene.mm */,
-				1AC651260FE70FD1004C15CB /* EAGLView2.h */,
-				1AC651270FE70FD1004C15CB /* EAGLView2.mm */,
-				1AC651280FE70FD1004C15CB /* main.m */,
+				1F4F2FC11159139200205FB4 /* MenuScene.h */,
+				1F4F2FC01159139200205FB4 /* MenuScene.mm */,
+				49A5A7EB115E5F72008E7819 /* PlayScene.h */,
+				49A5A7EC115E5F72008E7819 /* PlayScene.mm */,
+				498E9C4F115FB4EF0070BBC8 /* GameOverScene.h */,
+				498E9C4E115FB4EF0070BBC8 /* GameOverScene.mm */,
 				1AC651290FE70FD1004C15CB /* GameAppDelegate.h */,
 				1AC6512A0FE70FD1004C15CB /* GameAppDelegate.mm */,
+				1AC651280FE70FD1004C15CB /* main.m */,
 				1A4EBE0C0FDA21CD000F4C9F /* init_.c */,
 				1AAF6B470FD9A049000698DA /* init.c */,
+				1AC651260FE70FD1004C15CB /* EAGLView2.h */,
+				1AC651270FE70FD1004C15CB /* EAGLView2.mm */,
 				1AC651300FE70FE9004C15CB /* window.xib */,
 			);
 			name = src;
@@ -1062,6 +1092,9 @@
 				1A8BCDAE101A1BEA00DED70B /* resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				498E9C20115F84910070BBC8 /* OpenAL.framework */,
+				498E9C28115F84AF0070BBC8 /* AudioToolbox.framework */,
+				498E9C2A115F84AF0070BBC8 /* CoreAudio.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1069,9 +1102,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				494ED9A3115F6CB10078EAFC /* OpenAL.framework */,
+				494EDA06115F6FF90078EAFC /* CoreAudio.framework */,
+				494EDA11115F70160078EAFC /* AVFoundation.framework */,
 				1F584D741159073100C6CFA2 /* AVFoundation.framework */,
 				1F584D761159073100C6CFA2 /* AudioToolbox.framework */,
-				1F584D7A1159073100C6CFA2 /* OpenAL.framework */,
 				1A861A8410916C0500706CC5 /* CoreGraphics.framework */,
 				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
 				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
@@ -1209,20 +1244,20 @@
 				1F4F2EF411590D2D00205FB4 /* CJSONDeserializer.h in Headers */,
 				1F4F2EF611590D2D00205FB4 /* CJSONScanner.h in Headers */,
 				1F4F2EF811590D2D00205FB4 /* CJSONSerializer.h in Headers */,
-				1F4F2EFA11590D2D00205FB4 /* FontLabel.h in Headers */,
-				1F4F2EFC11590D2D00205FB4 /* FontLabelStringDrawing.h in Headers */,
-				1F4F2EFE11590D2D00205FB4 /* FontManager.h in Headers */,
-				1F4F2F0011590D2D00205FB4 /* ZAttributedString.h in Headers */,
-				1F4F2F0211590D2D00205FB4 /* ZAttributedStringPrivate.h in Headers */,
-				1F4F2F0311590D2D00205FB4 /* ZFont.h in Headers */,
 				1F4F2F0511590D2D00205FB4 /* CLScoreServerPost.h in Headers */,
 				1F4F2F0711590D2D00205FB4 /* CLScoreServerRequest.h in Headers */,
 				1F4F2F0911590D2D00205FB4 /* cocoslive.h in Headers */,
-				1F4F2F0B11590D2D00205FB4 /* CDAudioManager.h in Headers */,
-				1F4F2F0D11590D2D00205FB4 /* CDConfig.h in Headers */,
-				1F4F2F0E11590D2D00205FB4 /* CDOpenALSupport.h in Headers */,
-				1F4F2F0F11590D2D00205FB4 /* CocosDenshion.h in Headers */,
-				1F4F2F1111590D2D00205FB4 /* SimpleAudioEngine.h in Headers */,
+				494ED9F3115F6F7F0078EAFC /* CDAudioManager.h in Headers */,
+				494ED9F5115F6F7F0078EAFC /* CDConfig.h in Headers */,
+				494ED9F6115F6F7F0078EAFC /* CDOpenALSupport.h in Headers */,
+				494ED9F7115F6F7F0078EAFC /* CocosDenshion.h in Headers */,
+				494ED9F9115F6F7F0078EAFC /* SimpleAudioEngine.h in Headers */,
+				498E9B8D115F80E10070BBC8 /* FontLabel.h in Headers */,
+				498E9B8F115F80E10070BBC8 /* FontLabelStringDrawing.h in Headers */,
+				498E9B91115F80E10070BBC8 /* FontManager.h in Headers */,
+				498E9B93115F80E10070BBC8 /* ZAttributedString.h in Headers */,
+				498E9B95115F80E10070BBC8 /* ZAttributedStringPrivate.h in Headers */,
+				498E9B96115F80E10070BBC8 /* ZFont.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1296,11 +1331,12 @@
 				1A5BC5DA102D21E8001FEDD9 /* collision.obj in Resources */,
 				1A53011D103E5A9700859416 /* sphere.obj.gso in Resources */,
 				1A2DA1901047358B00D90110 /* jlongster.obj.gso in Resources */,
-				1F0F43B91158EC47005E11AC /* GameInfo.plist in Resources */,
 				1F4F302B1159168500205FB4 /* blocks.png in Resources */,
 				1F4F302C1159168500205FB4 /* Default.png in Resources */,
 				1F4F302D1159168500205FB4 /* fps_images.png in Resources */,
 				1F4F302E1159168500205FB4 /* Icon.png in Resources */,
+				498E9BDC115F82680070BBC8 /* cc.mp3 in Resources */,
+				498E9BDD115F82680070BBC8 /* Success.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1316,8 +1352,10 @@
 				1AC6512C0FE70FD1004C15CB /* EAGLView2.mm in Sources */,
 				1AC6512D0FE70FD1004C15CB /* main.m in Sources */,
 				1AC6512E0FE70FD1004C15CB /* GameAppDelegate.mm in Sources */,
-				1F4F2FC41159139200205FB4 /* HelloWorldScene.mm in Sources */,
+				1F4F2FC41159139200205FB4 /* MenuScene.mm in Sources */,
 				1F4F2FC51159139200205FB4 /* GLES-Render.mm in Sources */,
+				49A5A7ED115E5F72008E7819 /* PlayScene.mm in Sources */,
+				498E9C50115FB4EF0070BBC8 /* GameOverScene.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1434,17 +1472,17 @@
 				1F4F2EF511590D2D00205FB4 /* CJSONDeserializer.m in Sources */,
 				1F4F2EF711590D2D00205FB4 /* CJSONScanner.m in Sources */,
 				1F4F2EF911590D2D00205FB4 /* CJSONSerializer.m in Sources */,
-				1F4F2EFB11590D2D00205FB4 /* FontLabel.m in Sources */,
-				1F4F2EFD11590D2D00205FB4 /* FontLabelStringDrawing.m in Sources */,
-				1F4F2EFF11590D2D00205FB4 /* FontManager.m in Sources */,
-				1F4F2F0111590D2D00205FB4 /* ZAttributedString.m in Sources */,
-				1F4F2F0411590D2D00205FB4 /* ZFont.m in Sources */,
 				1F4F2F0611590D2D00205FB4 /* CLScoreServerPost.m in Sources */,
 				1F4F2F0811590D2D00205FB4 /* CLScoreServerRequest.m in Sources */,
 				1F4F2F0A11590D2D00205FB4 /* cocoslive.m in Sources */,
-				1F4F2F0C11590D2D00205FB4 /* CDAudioManager.m in Sources */,
-				1F4F2F1011590D2D00205FB4 /* CocosDenshion.m in Sources */,
-				1F4F2F1211590D2D00205FB4 /* SimpleAudioEngine.m in Sources */,
+				494ED9F4115F6F7F0078EAFC /* CDAudioManager.m in Sources */,
+				494ED9F8115F6F7F0078EAFC /* CocosDenshion.m in Sources */,
+				494ED9FA115F6F7F0078EAFC /* SimpleAudioEngine.m in Sources */,
+				498E9B8E115F80E10070BBC8 /* FontLabel.m in Sources */,
+				498E9B90115F80E10070BBC8 /* FontLabelStringDrawing.m in Sources */,
+				498E9B92115F80E10070BBC8 /* FontManager.m in Sources */,
+				498E9B94115F80E10070BBC8 /* ZAttributedString.m in Sources */,
+				498E9B97115F80E10070BBC8 /* ZFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1525,10 +1563,15 @@
 				HEADER_SEARCH_PATHS = libs;
 				INFOPLIST_FILE = resources/GameInfo.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
 					"-L/Users/cadar/iphone/Debug-iphoneos/iPhoneOS3.1.3/lib",
 					"-lgambc",
 					"-lcocos2d",
+					"-lfontlabel",
 				);
 				PRODUCT_NAME = Game;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1540,6 +1583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC_FONT_LABEL_SUPPORT = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mats Vestin";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				COPY_PHASE_STRIP = NO;
@@ -1550,6 +1594,10 @@
 				HEADER_SEARCH_PATHS = libs;
 				INFOPLIST_FILE = resources/GameInfo.plist;
 				INFOPLIST_PREPROCESS = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				OTHER_LDFLAGS = (
 					"-L/Users/cadar/iphone/Debug-iphonesim/iPhoneSimulator3.1.3/lib",
 					"-lgambc",
@@ -1569,6 +1617,10 @@
 				GCC_PREFIX_HEADER = game_Prefix.pch;
 				HEADER_SEARCH_PATHS = libs;
 				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				PRODUCT_NAME = Game;
 			};
 			name = Release;
@@ -1577,10 +1629,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC_FONT_LABEL_SUPPORT = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = libs;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"-L/Users/cadar/iphone/Debug-iphonesim/iPhoneSimulator3.1.3/lib",
+					"-lgambc",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = cocos2d;
 			};
@@ -1591,6 +1652,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				HEADER_SEARCH_PATHS = libs;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = "-L/Users/cadar/iphone/Debug-iphonesim/iPhoneSimulator3.1.3/lib";
 				PREBINDING = NO;
 				PRODUCT_NAME = cocos2d;
 			};
@@ -1603,6 +1669,10 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug-iphonesimulator\"",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = cocos2d;
 				ZERO_LINK = NO;
@@ -1613,6 +1683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CC_FONT_LABEL_SUPPORT = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mats Vestin (R7UDAW9JJ2)";
 				COPY_PHASE_STRIP = NO;
@@ -1653,7 +1724,7 @@
 				);
 				OTHER_LDFLAGS = (
 					"-L/Users/cadar/iphone/Debug-iphonesim/iPhoneSimulator3.1.3/lib",
-					"-lgambc",
+					"-all_load",
 				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EC4487CF-3385-4640-B239-AEAA0F0ADA35";
