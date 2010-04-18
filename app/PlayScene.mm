@@ -9,6 +9,7 @@
 // Import the interfaces
 #import "PlayScene.h"
 #import "GameOverScene.h"
+#import "SimpleAudioEngine.h"
 
 
 #if __cplusplus
@@ -27,7 +28,8 @@ extern "C" {
 }
 #endif
 
-
+#define MIN_SPEED 0.6
+#define MAX_SPEED 1.6
 
 
 //Pixel to metres ratio. Box2D uses metres as the unit for measurement.
@@ -67,6 +69,7 @@ enum {
 {
 	if( (self=[super init])) {
 
+
 		// enable touches
 		self.isTouchEnabled = YES;
 		
@@ -75,7 +78,8 @@ enum {
 		
 		CGSize screenSize = [CCDirector sharedDirector].winSize;
 		CCLOG(@"Screen width %0.2f screen height %0.2f",screenSize.width,screenSize.height);
-		
+		centre = screenSize.width/2;
+		horizon = screenSize.height/2; 
 		// Define the gravity vector.
 		b2Vec2 gravity;
 		gravity.Set(0.0f, -10.0f);
@@ -130,6 +134,9 @@ enum {
 		groundBox.SetAsEdge(b2Vec2(screenSize.width/PTM_RATIO,screenSize.height/PTM_RATIO), b2Vec2(screenSize.width/PTM_RATIO,0));
 		groundBody->CreateFixture(&groundBox,0);
 		
+//		b2Vec2 gravity( -1 * 10, 1 * 10);
+//		world->SetGravity( gravity );
+		
 		
 		//Set up sprite
 		
@@ -142,14 +149,45 @@ enum {
 		[self addChild:label z:0];
 		[label setColor:ccc3(255,255,255)];
 		label.position = ccp( screenSize.width/2, screenSize.height-50);
-		
+//		[self schedule: @selector(itsOver)	interval:14.0];
 		[self schedule: @selector(tick:)];
-		[self schedule: @selector(itsOver)	interval:4.0];
+
+		engineSpeed = 1.0;
+		[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.3];
+		[[SimpleAudioEngine sharedEngine] setEffectsVolume:1.0];	
+		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"cc.mp3"];
+		
+		engineThread = [[NSThread alloc] initWithTarget:self 
+											   selector:@selector(engine) 
+												 object:nil];
+	
+
 	}
+	nextBeat=[[NSDate alloc] initWithTimeIntervalSinceNow:0.0];
+	[engineThread start];
+	
 	return self;
 }
+
+-(void) engine
+{
+	while (![[NSThread currentThread] isCancelled]) {
+
+		CCLOG(@"%d %d %0.2f ",currentAction, latestAction, engineSpeed);
+		
+			
+		[[SimpleAudioEngine sharedEngine] playEffect:@"Engine5.wav" pitch:engineSpeed pan:0 gain:1];
+		newNextBeat=[[NSDate alloc] initWithTimeInterval:0.07/engineSpeed sinceDate:nextBeat];
+        [nextBeat release];
+        nextBeat=newNextBeat;
+        [NSThread sleepUntilDate:nextBeat];
+	}
+}
+
+
 -(void) itsOver
 {
+	[engineThread cancel];
 	NSLog(@"GAMEOVER");
 	[[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:1.0 scene:[GameOver node]]];	
 	
@@ -173,9 +211,10 @@ enum {
 	render();
 }
 
+
 -(void) addNewSpriteWithCoords:(CGPoint)p
 {
-	CCLOG(@"Add sprite %0.2f x %02.f",p.x,p.y);
+//	CCLOG(@"Add sprite %0.2f x %02.f",p.x,p.y);
 	CCSpriteSheet *sheet = (CCSpriteSheet*) [self getChildByTag:kTagSpriteSheet];
 	
 	//We have a 64x64 sprite sheet with 4 different 32x32 images.  The following code is
@@ -217,6 +256,17 @@ enum {
 	//You need to make an informed choice, the following URL is useful
 	//http://gafferongames.com/game-physics/fix-your-timestep/
 	
+	
+	if(currentAction == 3 && engineSpeed < MAX_SPEED) {
+		engineSpeed = engineSpeed + 0.01;	
+	}
+	if(currentAction == 4 && engineSpeed > MIN_SPEED) {
+		engineSpeed = engineSpeed - 0.02;	
+	} else if(currentAction == 0 && engineSpeed > MIN_SPEED) {
+		engineSpeed = engineSpeed - 0.001;
+	}
+	
+	
 	int32 velocityIterations = 8;
 	int32 positionIterations = 1;
 	
@@ -237,6 +287,62 @@ enum {
 	}
 }
 
+
+
+-(int8) input:(CGPoint)p
+{
+	
+	if (p.x >= centre && p.y >= horizon) {
+		currentAction = 1;
+	} else if (p.x < centre && p.y >= horizon) {
+		currentAction = 2;
+	} else if (p.x >= centre && p.y < horizon) {
+		currentAction = 3;
+	} else if (p.x < centre && p.y < horizon) {
+		currentAction = 4;
+	}
+	return currentAction;
+}
+
+- (void)ccTouchesBegan :(NSSet *)touches withEvent:(UIEvent *)event
+{
+	//Add a new body/atlas sprite at the touched location
+	for( UITouch *touch in touches ) {
+		CGPoint location = [touch locationInView: [touch view]];
+		
+		location = [[CCDirector sharedDirector] convertToGL: location];
+		if(currentAction == 0) {
+
+				
+			currentAction = [self input: location];
+			
+			if(currentAction == 3 && engineSpeed < MAX_SPEED) {
+				engineSpeed = engineSpeed + 0.1;	
+			}
+			if(currentAction == 4 && engineSpeed > MIN_SPEED) {
+				engineSpeed = engineSpeed - 0.2;	
+			} 
+		}
+	}
+}
+
+- (void)ccTouchesMoved :(NSSet *)touches withEvent:(UIEvent *)event
+{
+	//Add a new body/atlas sprite at the touched location
+	for( UITouch *touch in touches ) {
+		CGPoint location = [touch locationInView: [touch view]];
+		
+		location = [[CCDirector sharedDirector] convertToGL: location];
+		latestAction = [self input: location];
+		if (currentAction != 0 && currentAction != latestAction) {
+			currentAction = 0;
+			latestAction = 0;
+
+		}
+	
+	}
+}
+
 - (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	//Add a new body/atlas sprite at the touched location
@@ -244,8 +350,10 @@ enum {
 		CGPoint location = [touch locationInView: [touch view]];
 		
 		location = [[CCDirector sharedDirector] convertToGL: location];
+		[self input: location];
+		currentAction = 0;
+		latestAction = 0;
 		
-		[self addNewSpriteWithCoords: location];
 	}
 }
 
@@ -264,9 +372,8 @@ enum {
 	
 	// accelerometer values are in "Portrait" mode. Change them to Landscape left
 	// multiply the gravity by 10
-	b2Vec2 gravity( -accelY * 10, accelX * 10);
-	
-	world->SetGravity( gravity );
+	//b2Vec2 gravity( -accelY * 10, accelX * 10);
+	//world->SetGravity( gravity );
 }
 
 // on "dealloc" you need to release all your retained objects

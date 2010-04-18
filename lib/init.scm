@@ -6,13 +6,13 @@
 
 (include "util/remote-debugger/debuggee.scm")
 ;(make-rdi-host "localhost:20000")
-(make-rdi-host "10.0.1.9:20000")
+;(make-rdi-host "10.0.1.9:20000")
 
-(thread-start! (make-thread  (lambda () 
-                               (println "starting repl..")
-                               (##repl-debug-main)
-                               (println "..repl done.")
-                               )))
+;(thread-start! (make-thread  (lambda () 
+;                               (println "starting repl..")
+;                               (##repl-debug-main)
+;                               (println "..repl done.")
+;                               )))
 
 ;;;; dependencies
 

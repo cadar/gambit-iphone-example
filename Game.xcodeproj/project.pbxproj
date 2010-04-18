@@ -267,6 +267,11 @@
 		1F4F302E1159168500205FB4 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F4F302A1159168500205FB4 /* Icon.png */; };
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		493224231179C02700D5C23F /* Engine.wav in Resources */ = {isa = PBXBuildFile; fileRef = 493224221179C02700D5C23F /* Engine.wav */; };
+		493224551179C72400D5C23F /* Engine2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 493224541179C72400D5C23F /* Engine2.wav */; };
+		493225251179F4AB00D5C23F /* Engine5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 493225241179F4AB00D5C23F /* Engine5.wav */; };
+		493225331179F53F00D5C23F /* Engine4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 493225321179F53F00D5C23F /* Engine4.wav */; };
+		493225351179F54200D5C23F /* Engine3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 493225341179F54200D5C23F /* Engine3.wav */; };
 		494ED8F7115F679C0078EAFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F584D741159073100C6CFA2 /* AVFoundation.framework */; };
 		494ED8FC115F67AD0078EAFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F584D741159073100C6CFA2 /* AVFoundation.framework */; };
 		494ED9F3115F6F7F0078EAFC /* CDAudioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA94F1B1159025C007858D3 /* CDAudioManager.h */; };
@@ -599,6 +604,11 @@
 		1FA94F711159025C007858D3 /* b2WorldCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2WorldCallbacks.h; sourceTree = "<group>"; };
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		493224221179C02700D5C23F /* Engine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine.wav; sourceTree = "<group>"; };
+		493224541179C72400D5C23F /* Engine2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine2.wav; sourceTree = "<group>"; };
+		493225241179F4AB00D5C23F /* Engine5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine5.wav; sourceTree = "<group>"; };
+		493225321179F53F00D5C23F /* Engine4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine4.wav; sourceTree = "<group>"; };
+		493225341179F54200D5C23F /* Engine3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Engine3.wav; sourceTree = "<group>"; };
 		494ED8A7115F66090078EAFC /* Success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Success.wav; sourceTree = "<group>"; };
 		494ED90F115F68630078EAFC /* cc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cc.mp3; sourceTree = "<group>"; };
 		494ED9A3115F6CB10078EAFC /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -656,6 +666,11 @@
 		1A8BCDAE101A1BEA00DED70B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				493225321179F53F00D5C23F /* Engine4.wav */,
+				493225341179F54200D5C23F /* Engine3.wav */,
+				493225241179F4AB00D5C23F /* Engine5.wav */,
+				493224541179C72400D5C23F /* Engine2.wav */,
+				493224221179C02700D5C23F /* Engine.wav */,
 				494ED90F115F68630078EAFC /* cc.mp3 */,
 				494ED8A7115F66090078EAFC /* Success.wav */,
 				1F0F43B81158EC47005E11AC /* GameInfo.plist */,
@@ -1337,6 +1352,11 @@
 				1F4F302E1159168500205FB4 /* Icon.png in Resources */,
 				498E9BDC115F82680070BBC8 /* cc.mp3 in Resources */,
 				498E9BDD115F82680070BBC8 /* Success.wav in Resources */,
+				493224231179C02700D5C23F /* Engine.wav in Resources */,
+				493224551179C72400D5C23F /* Engine2.wav in Resources */,
+				493225251179F4AB00D5C23F /* Engine5.wav in Resources */,
+				493225331179F53F00D5C23F /* Engine4.wav in Resources */,
+				493225351179F54200D5C23F /* Engine3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

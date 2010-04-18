@@ -72,7 +72,7 @@ enum {
 		label.position = ccp(screenSize.width/2,(screenSize.height/2));
         [self addChild:label];
 		
-		soundId = [[SimpleAudioEngine sharedEngine] playEffect:@"Success.wav" pitch:1.0 pan:1.0 gain:0.7];
+//		soundId = [[SimpleAudioEngine sharedEngine] playEffect:@"Success.wav" pitch:1.0 pan:1.0 gain:0.7];
 		
 		bgVol = 0.5f;
 		effVol = 1.0f;

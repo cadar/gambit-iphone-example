@@ -71,15 +71,7 @@ enum {
 -(id) init
 {
 	if( (self=[super init])) {
-		SimpleAudioEngine *sae = [SimpleAudioEngine sharedEngine];
-		if (sae != nil) {
-			[sae preloadBackgroundMusic:@"cc.mp3"];
-			if (sae.willPlayBackgroundMusic) {
-				sae.backgroundMusicVolume = 0.5f;
-				sae.effectsVolume = 1.0f;	
-			}
-		}	
-		
+		[[SimpleAudioEngine sharedEngine] preloadEffect:@"Engine2.wav"];
 		// enable touches
 		self.isTouchEnabled = YES;
 		
@@ -114,12 +106,6 @@ enum {
 - (void)onPlay:(id)sender
 {
 	NSLog(@"on play");
-	
-	[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.5];
-	[[SimpleAudioEngine sharedEngine] setEffectsVolume:1.0];	
-	
-	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"cc.mp3"];
-//	[[CCDirector sharedDirector] replaceScene:[CCFadeTransition transitionWithDuration:1.0 scene:[Play node]]];	
 	[[CCDirector sharedDirector] pushScene:[CCFadeTransition transitionWithDuration:1.0 scene:[Play node]]];	
 }
 
